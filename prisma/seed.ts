@@ -1,186 +1,299 @@
+
 import { prisma } from "../src/lib/db";
 import bcrypt from "bcryptjs";
 
-const submissions = [
+export const submissions = [
     {
-        appName: "SolahTrack",
-        teamName: "Pixel Ummah",
-        teamMembers: ["Haziq Iman", "Nur Aisyah", "Danish Rizky"],
-        description:
-            "SolahTrack helps mosque-goers log their daily prayers and receive gentle reminders. Integrated with the mosque's prayer time API for real-time accuracy.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117713/ramadhan_challenge_seed/ahg6sjrrejuhwu7ztequ.webp",
-        techStack: ["Next.js", "PostgreSQL", "Tailwind CSS"],
-        mosqueName: "Masjid Negara",
-        latitude: 3.1427,
-        longitude: 101.6929,
+        "appName": "Sajda-community",
+        "teamName": "smashing_pumpkins",
+        "description": "\"Komuniti masjid anda, dalam poket anda.\"",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132891/ramadhan_challenge_seed/gwbdakw58k4fxwfypmdx.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Masjid Saujana Utama",
+        "latitude": 3.202785803120564,
+        "longitude": 101.48857990913815,
+        "teamMembers": [
+            "smashing_pumpkins"
+        ],
+        "createdAt": new Date("2026-03-10T06:55:42.349Z")
     },
     {
-        appName: "IftarFinder",
-        teamName: "KD Warriors",
-        teamMembers: ["Arif Hakim", "Sofea Nadia"],
-        description:
-            "IftarFinder connects community members who want to open fast together. Find nearby mosques offering free iftar and book a spot in seconds.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117721/ramadhan_challenge_seed/c2uhdu4qw7lzn9ygvx8w.webp",
-        techStack: ["React", "Node.js", "MongoDB"],
-        mosqueName: "Masjid Jamek",
-        latitude: 3.1493,
-        longitude: 101.6961,
+        "appName": "Jejak Masjid",
+        "teamName": "loqmandev",
+        "description": "Pokemon GO but for Masjids",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132892/ramadhan_challenge_seed/ymmzgx9cgnfsyxppc5iz.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Unknown Mosque",
+        "latitude": 3.139,
+        "longitude": 101.6869,
+        "teamMembers": [
+            "loqmandev"
+        ],
+        "createdAt": new Date("2026-03-10T04:59:47.982Z")
     },
     {
-        appName: "QuranKids",
-        teamName: "Team Barakah",
-        teamMembers: ["Irdina Suffian", "Adam Farhan", "Umi Kalthum", "Zulaikha Musa"],
-        description:
-            "QuranKids is a gamified Quran learning app for children aged 4–12. Features tajweed exercises, progress badges, and parent dashboards.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117716/ramadhan_challenge_seed/exqtaod15condlszw9dh.webp",
-        techStack: ["Flutter", "Firebase"],
-        mosqueName: "Masjid Al-Falah Bangsar",
-        latitude: 3.1193,
-        longitude: 101.6773,
+        "appName": "MASJID JAMEK FASTABIQUL KHAYRAT BATU 3",
+        "teamName": "fadilaiman",
+        "description": "One hub for all digital content of Masjid Jamek Fastabiqül Khayrat Batu 3.",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132893/ramadhan_challenge_seed/wkq5zuu77z67nhssij3n.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "MASJID JAMEK FASTABIQUL KHAYRAT BATU 3",
+        "latitude": 3.0595645490734737,
+        "longitude": 101.55719181004875,
+        "teamMembers": [
+            "fadilaiman"
+        ],
+        "createdAt": new Date("2026-03-10T04:41:29.419Z")
     },
     {
-        appName: "ZakatCalc",
-        teamName: "Devs of Deen",
-        teamMembers: ["Mukhlis Aiman", "Farah Liyana"],
-        description:
-            "ZakatCalc guides Muslims through calculating their annual zakat obligations with an easy step-by-step wizard and localized nisab rates.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117728/ramadhan_challenge_seed/hk0kd4xyunqbzmximenv.webp",
-        techStack: ["Vue", "Laravel", "PostgreSQL"],
-        mosqueName: "Masjid Sultan Salahuddin Abdul Aziz Shah",
-        latitude: 3.0731,
-        longitude: 101.5183,
+        "appName": "Zahir Digital",
+        "teamName": "Ajwdxr",
+        "description": "Kracked Devs Ramadhan Challenge 2026",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132894/ramadhan_challenge_seed/yyoqqt3irmcbz949hgoy.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Masjid Zahir",
+        "latitude": 6.1205561474934385,
+        "longitude": 100.36519484073983,
+        "teamMembers": [
+            "Ajwdxr"
+        ],
+        "createdAt": new Date("2026-03-10T03:59:40.685Z")
     },
     {
-        appName: "WakafMap",
-        teamName: "Codelisters",
-        teamMembers: ["Irfan Danial", "Siti Mariam", "Luqmanul Hakim"],
-        description:
-            "WakafMap visualizes endowment lands across Malaysia, letting donors browse available wakaf plots and contribute directly through the app.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117724/ramadhan_challenge_seed/hmowpopm7j4bv9fvjdf6.webp",
-        techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-        mosqueName: "Masjid Putra",
-        latitude: 2.9399,
-        longitude: 101.6931,
+        "appName": "Masjid Al Rahmah Mergong Alor Setar",
+        "teamName": "taufec",
+        "description": "Hub online Masjid Al Rahmah Anda!",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132896/ramadhan_challenge_seed/mo3bpc7lvy4bpfmqjpun.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Masjid Al Rahmah Mergong Alor Setar",
+        "latitude": 6.142418873218813,
+        "longitude": 100.35682359655911,
+        "teamMembers": [
+            "taufec"
+        ],
+        "createdAt": new Date("2026-03-10T03:54:43.776Z")
     },
     {
-        appName: "MosqueQueue",
-        teamName: "Null Pointer",
-        teamMembers: ["Hazwan Arif", "Ain Shahira"],
-        description:
-            "MosqueQueue eliminates crowding at Friday prayers by letting worshippers check live occupancy and reserve a spot in advance.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117718/ramadhan_challenge_seed/it4s59we0dhirvnj6hin.webp",
-        techStack: ["React", "Node.js", "PostgreSQL"],
-        mosqueName: "Masjid Al-Bukhary",
-        latitude: 3.1568,
-        longitude: 101.7036,
+        "appName": "JomSolat: Masjid Al-Malik Khalid Digital Companion",
+        "teamName": "akaNazrul",
+        "description": "JomSolat is a mobile first progressive web app built for the Muslim community of Masjid Al-Malik Khalid, Gelugor, Penang",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132897/ramadhan_challenge_seed/lbgkv7r0bldlgu3hgew2.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Masjid Al-Malik",
+        "latitude": 5.353862511269816,
+        "longitude": 100.30201439205112,
+        "teamMembers": [
+            "akaNazrul"
+        ],
+        "createdAt": new Date("2026-03-10T03:42:26.895Z")
     },
     {
-        appName: "RamadhanJournal",
-        teamName: "HashtagHijrah",
-        teamMembers: ["Faris Mustafa", "Nur Hidayah", "Amsyar Rizwan"],
-        description:
-            "A private journaling app that guides users through daily Ramadhan reflections, gratitude logs, and dua tracking for the 30 days of fasting.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117725/ramadhan_challenge_seed/jb2djx6pxxcukknd9lii.webp",
-        techStack: ["Flutter", "Firebase"],
-        mosqueName: "Masjid Al-Hidayah Ampang",
-        latitude: 3.1474,
-        longitude: 101.7607,
+        "appName": "TerawihTribe",
+        "teamName": "arysya",
+        "description": "Your mosque community, gamified",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132898/ramadhan_challenge_seed/vnmz3gi2ct5fopjlelli.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Masjid Salahuddin Al-Ayubbi",
+        "latitude": 3.222874217213024,
+        "longitude": 101.72033174073776,
+        "teamMembers": [
+            "arysya"
+        ],
+        "createdAt": new Date("2026-03-10T03:40:59.580Z")
     },
     {
-        appName: "SedekahGo",
-        teamName: "KrakenCoders",
-        teamMembers: ["Nazirul Hakim", "Athirah Nadwa", "Fadzlan Shah"],
-        description:
-            "SedekahGo enables instant QR-based charity donations at any mosque in Malaysia. Funds are tracked transparently on a public leaderboard.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117709/ramadhan_challenge_seed/jebg3pu7rk8stro36cpn.webp",
-        techStack: ["Next.js", "Stripe", "PostgreSQL"],
-        mosqueName: "Masjid Wilayah Persekutuan",
-        latitude: 3.1740,
-        longitude: 101.6901,
+        "appName": "suraunurhidayahkmf.com",
+        "teamName": "Ijam",
+        "description": "A smarter surau experience — live prayer times, infaq, Quran & Hadith, and livestreamed classes.",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132899/ramadhan_challenge_seed/trenpiqw6owmanioq9ek.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Surau Nur Hidayah",
+        "latitude": 5.325077064138225,
+        "longitude": 100.2757509587047,
+        "teamMembers": [
+            "Ijam"
+        ],
+        "createdAt": new Date("2026-03-10T03:16:38.156Z")
     },
     {
-        appName: "HalaqahHub",
-        teamName: "Team Sinergy",
-        teamMembers: ["Shahrul Nizam", "Izzati Husna"],
-        description:
-            "HalaqahHub digitizes religious study circles. Scholars post session schedules, students RSVP, and notes are shared automatically post-halaqah.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117723/ramadhan_challenge_seed/jjnoxoj1z6m2zt9iho0h.webp",
-        techStack: ["React", "Express", "MongoDB"],
-        mosqueName: "Masjid Ahmad Swilem Shah Alam",
-        latitude: 3.0887,
-        longitude: 101.5378,
+        "appName": "Landing Website for Surau Nur Asy-Syura",
+        "teamName": "nhily",
+        "description": "A welcoming space for worship, knowledge, and community for Surau Nur Asy-Syura.",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132900/ramadhan_challenge_seed/rdzcwh5gupdyyds0ylvr.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Surau Nur Asy-Syura",
+        "latitude": 5.852262152547652,
+        "longitude": 100.47183178306695,
+        "teamMembers": [
+            "nhily"
+        ],
+        "createdAt": new Date("2026-03-09T23:46:24.930Z")
     },
     {
-        appName: "ImsakAlert",
-        teamName: "Binary Brothers",
-        teamMembers: ["Danish Qayyum", "Hafizuddin Yusri", "Airil Anwar", "Syakir Nabilah"],
-        description:
-            "ImsakAlert sends hyper-local push notifications 10 minutes before imsak and adhan. Supports all Malaysian states with district-level accuracy.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117711/ramadhan_challenge_seed/llzzxvtx0fwenrysbnat.webp",
-        techStack: ["React", "Firebase", "Node.js"],
-        mosqueName: "Masjid Al-Khairiah Petaling Jaya",
-        latitude: 3.1073,
-        longitude: 101.6067,
+        "appName": "Masjid Ubudiah Kuala Kangsar",
+        "teamName": "AbahKau",
+        "description": "moh ke mesjid",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132901/ramadhan_challenge_seed/vxxdors9hblxhyjclfwm.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Masjid Ubudiah Kuala Kangsar",
+        "latitude": 4.764241679966177,
+        "longitude": 100.95092306957397,
+        "teamMembers": [
+            "AbahKau"
+        ],
+        "createdAt": new Date("2026-03-09T22:24:09.974Z")
     },
     {
-        appName: "MasjidConnect",
-        teamName: "DevCorp",
-        teamMembers: ["Zharif Hakim", "Nur Syafiqah"],
-        description:
-            "MasjidConnect is a community platform for mosque committees to post announcements, coordinate volunteers, and manage event registration.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117714/ramadhan_challenge_seed/ncwuvdsqrcphobiwoxps.webp",
-        techStack: ["Next.js", "PostgreSQL", "Tailwind CSS"],
-        mosqueName: "Masjid Saidina Abu Bakar As-Siddiq Damansara",
-        latitude: 3.1545,
-        longitude: 101.6333,
+        "appName": "Qiyam: Masjid Tracker",
+        "teamName": "muazamcode",
+        "description": "Find nearby masjids, track prayers, and grow your worship journey with Qiyam.",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132902/ramadhan_challenge_seed/fmr2hyzfaiqjzrxjhori.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Unknown Mosque",
+        "latitude": 3.139,
+        "longitude": 101.6869,
+        "teamMembers": [
+            "muazamcode"
+        ],
+        "createdAt": new Date("2026-03-09T16:01:10.303Z")
     },
     {
-        appName: "TarawihBuddy",
-        teamName: "Neon Nights",
-        teamMembers: ["Haris Iskandar", "Soleha Zain", "Nik Azri"],
-        description:
-            "TarawihBuddy lets worshippers find nearby mosques offering tarawih prayers, check which rakaat they are at, and track their completion over Ramadhan.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117726/ramadhan_challenge_seed/nltssslmi5j4foayma4k.webp",
-        techStack: ["Vue", "Django", "PostgreSQL"],
-        mosqueName: "Masjid Al-Rahman Subang Jaya",
-        latitude: 3.0530,
-        longitude: 101.5801,
+        "appName": "Masjid Al-Ikhlas Seksyen 13",
+        "teamName": "Meursault",
+        "description": "A Mosque architecture and UI inspired my modern and neobrtualism",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132903/ramadhan_challenge_seed/ummidfyhkbdwpphibbjm.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Masjid Al-Ikhlas Seksyen 13",
+        "latitude": 3.0867532959567296,
+        "longitude": 101.54532532539322,
+        "teamMembers": [
+            "Meursault"
+        ],
+        "createdAt": new Date("2026-03-09T14:42:08.721Z")
     },
     {
-        appName: "FoodSahur",
-        teamName: "Leftover Devs",
-        teamMembers: ["Aidil Fitri", "Maisarah Yusof", "Ridhwan Fauzi"],
-        description:
-            "FoodSahur connects surplus sahur food from mosque kitchens to needy families nearby. Real-time listings, GPS pick-up, and live volunteer dispatch.",
-        featureImage: "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773117719/ramadhan_challenge_seed/odka5uiwujnhuxfjycav.webp",
-        techStack: ["Flutter", "Firebase", "Python"],
-        mosqueName: "Masjid Al-Malik Cheras",
-        latitude: 3.1042,
-        longitude: 101.7357,
+        "appName": "MSI UTHM",
+        "teamName": "yunn",
+        "description": "Smart mosque companion for UTHM students: prayer times, events, announcements, and community tools in one platform.",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132904/ramadhan_challenge_seed/gmynsyffo3hx5kl8gdms.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Masjid Sultan Ibrahim UTHM",
+        "latitude": 1.8553992271959383,
+        "longitude": 103.0811783343166,
+        "teamMembers": [
+            "yunn"
+        ],
+        "createdAt": new Date("2026-03-09T14:11:17.303Z")
     },
+    {
+        "appName": "Saf",
+        "teamName": "irfanrff",
+        "description": "A serene digital companion connecting worshippers to mosque updates, prayer times, and community life.",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132904/ramadhan_challenge_seed/brazxhzsfiph8hhh87vz.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Masjid Al-Azim",
+        "latitude": 2.215428114118292,
+        "longitude": 102.26216645423071,
+        "teamMembers": [
+            "irfanrff"
+        ],
+        "createdAt": new Date("2026-03-09T14:00:20.322Z")
+    },
+    {
+        "appName": "Pemuda Surau SABAS",
+        "teamName": "fizlaw96",
+        "description": "Menghubungkan anak muda dengan program dan aktiviti komuniti Surau Sabas.",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132905/ramadhan_challenge_seed/udqnp8y49z2esf2k9wo3.webp",
+        "techStack": [
+            "Next.js",
+            "React",
+            "PostgreSQL"
+        ],
+        "mosqueName": "Surau Saidina Abu Bakar",
+        "latitude": 3.0018921933947134,
+        "longitude": 101.65266441190187,
+        "teamMembers": [
+            "fizlaw96"
+        ],
+        "createdAt": new Date("2026-03-07T08:49:06.681Z")
+    }
 ];
 
 async function main() {
-    console.log("🌱 Seeding 13 submissions...");
+    await prisma.submission.deleteMany();
+    await prisma.admin.deleteMany();
 
-    for (const submission of submissions) {
-        await prisma.submission.create({ data: submission });
-    }
+    const hashedPassword = await bcrypt.hash("admin123", 10);
+    await prisma.admin.create({
+        data: {
+            email: "admin@krackeddevs.com",
+            password: hashedPassword,
+        },
+    });
 
-    console.log(`✅ Seeded ${submissions.length} submissions.`);
-
-    // Also seed admin if env vars present
-    const email = process.env.ADMIN_EMAIL;
-    const password = process.env.ADMIN_PASSWORD;
-    if (email && password) {
-        const hashedPassword = await bcrypt.hash(password, 12);
-        await prisma.admin.upsert({
-            where: { email },
-            update: { password: hashedPassword },
-            create: { email, password: hashedPassword },
+    for (const sub of submissions) {
+        await prisma.submission.create({
+            data: sub,
         });
-        console.log(`✅ Admin user seeded for: ${email}`);
     }
+
+    console.log("Database seeded from CSV output!");
 }
 
 main()

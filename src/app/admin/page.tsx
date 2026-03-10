@@ -6,7 +6,13 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 export default async function AdminDashboard() {
-    let submissions = [];
+    let submissions: {
+        id: string;
+        appName: string;
+        teamName: string;
+        mosqueName: string;
+        createdAt: Date;
+    }[] = [];
 
     try {
         submissions = await prisma.submission.findMany({

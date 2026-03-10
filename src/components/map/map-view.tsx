@@ -17,7 +17,7 @@ type MapSubmission = {
     teamName: string;
     mosqueName: string;
     techStack: string[];
-    featureImage: string | null;
+    featureImage: string;
     latitude: number;
     longitude: number;
 };
@@ -32,7 +32,7 @@ interface AppSubmission {
     latitude: number;
     longitude: number;
     techStack: string[];
-    featureImage: string | null;
+    featureImage: string;
     createdAt: Date;
     updatedAt: Date;
 }

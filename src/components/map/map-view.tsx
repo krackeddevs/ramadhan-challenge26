@@ -349,6 +349,23 @@ export default function MapView() {
                 <div className="absolute inset-0 z-[100] flex items-center justify-center bg-[#050505] opacity-0 pointer-events-none" />
             )}
 
+            {/* Floating Footer Logos */}
+            <div className={cn(
+                "absolute bottom-6 left-1/2 -translate-x-1/2 z-[400] flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-[10px] sm:text-xs text-[#888] font-bold tracking-wider uppercase transition-all duration-1000",
+                introPhase === "done" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+            )}>
+                <div className="flex items-center gap-2 bg-[#050505]/95 backdrop-blur-md px-4 py-2 rounded-full border border-[#222] shadow-[0_0_15px_rgba(57,255,20,0.1)] hover:border-primary/50 transition-colors">
+                    <span>KD Project</span>
+                    <Image src="/logos/kdlogo.png" alt="KD Logo" width={20} height={20} className="object-contain" />
+                </div>
+                <div className="flex items-center gap-3 bg-[#050505]/95 backdrop-blur-md px-4 py-2.5 rounded-full border border-[#222] shadow-[0_0_15px_rgba(57,255,20,0.1)] hover:border-primary/50 transition-colors">
+                    <span>Supported By</span>
+                    <Image src="/logos/lovable.png" alt="Lovable Logo" width={70} height={20} className="object-contain" />
+                    <span className="w-px h-3 bg-[#444]" />
+                    <Image src="/logos/google.png" alt="Google Logo" width={60} height={18} className="object-contain" />
+                </div>
+            </div>
+
             {/* Floating Submissions Panel */}
             <div
                 className={cn(
@@ -492,7 +509,7 @@ export default function MapView() {
 
             {/* Detail Dialog */}
             <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-                <DialogContent className="p-0 border-[#222222] bg-[#111111] max-w-[800px] w-full overflow-hidden gap-0">
+                <DialogContent className="p-0 border-[#222222] bg-[#111111] w-full max-w-[95vw] sm:max-w-[800px] md:max-w-[800px] overflow-hidden gap-0">
                     <DialogTitle className="sr-only">Submission Details</DialogTitle>
                     <DialogDescription className="sr-only">Detailed view of the selected application submission</DialogDescription>
                     {loadingDetail ? (

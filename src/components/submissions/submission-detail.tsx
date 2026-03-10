@@ -66,7 +66,7 @@ export function SubmissionDetail({ submission }: SubmissionDetailProps) {
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-md bg-primary/10 hover:bg-primary/20 border border-primary/30 text-primary hover:text-primary transition-colors"
                                     >
-                                        <Globe className="w-4 h-4" /> Live Demo
+                                        <Globe className="w-4 h-4" /> View App
                                     </a>
                                 )}
                             </div>

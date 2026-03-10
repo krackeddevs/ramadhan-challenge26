@@ -7,7 +7,7 @@ export const submissions = [
         "appName": "Sajda-community",
         "teamName": "smashing_pumpkins",
         "description": "\"Komuniti masjid anda, dalam poket anda.\"",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132891/ramadhan_challenge_seed/gwbdakw58k4fxwfypmdx.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133314/ramadhan_challenge_seed/wdxfgbmduyxll4yhvjml.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -19,13 +19,15 @@ export const submissions = [
         "teamMembers": [
             "smashing_pumpkins"
         ],
+        "gitUrl": "https://github.com/danishsenju/sajda-community",
+        "siteUrl": "https://sajda-ten.vercel.app/",
         "createdAt": new Date("2026-03-10T06:55:42.349Z")
     },
     {
         "appName": "Jejak Masjid",
         "teamName": "loqmandev",
         "description": "Pokemon GO but for Masjids",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132892/ramadhan_challenge_seed/ymmzgx9cgnfsyxppc5iz.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133315/ramadhan_challenge_seed/rqc8qydieckkb6x5ted7.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -37,13 +39,15 @@ export const submissions = [
         "teamMembers": [
             "loqmandev"
         ],
+        "gitUrl": "https://github.com/loqmandev/project-masjid-mobile",
+        "siteUrl": "https://jejakmasjid.my",
         "createdAt": new Date("2026-03-10T04:59:47.982Z")
     },
     {
         "appName": "MASJID JAMEK FASTABIQUL KHAYRAT BATU 3",
         "teamName": "fadilaiman",
         "description": "One hub for all digital content of Masjid Jamek Fastabiqül Khayrat Batu 3.",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132893/ramadhan_challenge_seed/wkq5zuu77z67nhssij3n.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133316/ramadhan_challenge_seed/td1rgj3afan0ytojrar6.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -55,13 +59,15 @@ export const submissions = [
         "teamMembers": [
             "fadilaiman"
         ],
+        "gitUrl": "https://github.com/fadilaiman/mjfkbt3",
+        "siteUrl": "http://mjfkbt3.saasku.my/",
         "createdAt": new Date("2026-03-10T04:41:29.419Z")
     },
     {
         "appName": "Zahir Digital",
         "teamName": "Ajwdxr",
         "description": "Kracked Devs Ramadhan Challenge 2026",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132894/ramadhan_challenge_seed/yyoqqt3irmcbz949hgoy.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133317/ramadhan_challenge_seed/j9nlj40kgagspf1guolh.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -73,13 +79,15 @@ export const submissions = [
         "teamMembers": [
             "Ajwdxr"
         ],
+        "gitUrl": "https://github.com/Ajwdxr/masjid",
+        "siteUrl": "https://masjid-iota.vercel.app/",
         "createdAt": new Date("2026-03-10T03:59:40.685Z")
     },
     {
         "appName": "Masjid Al Rahmah Mergong Alor Setar",
         "teamName": "taufec",
         "description": "Hub online Masjid Al Rahmah Anda!",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132896/ramadhan_challenge_seed/mo3bpc7lvy4bpfmqjpun.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133318/ramadhan_challenge_seed/ddf8bnuuxid6kf8kwbkv.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -91,13 +99,15 @@ export const submissions = [
         "teamMembers": [
             "taufec"
         ],
+        "gitUrl": null,
+        "siteUrl": "https://app.masjidalrahmah.com/",
         "createdAt": new Date("2026-03-10T03:54:43.776Z")
     },
     {
         "appName": "JomSolat: Masjid Al-Malik Khalid Digital Companion",
         "teamName": "akaNazrul",
         "description": "JomSolat is a mobile first progressive web app built for the Muslim community of Masjid Al-Malik Khalid, Gelugor, Penang",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132897/ramadhan_challenge_seed/lbgkv7r0bldlgu3hgew2.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133319/ramadhan_challenge_seed/qmtxl4yjvjkrc48aej5q.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -109,13 +119,15 @@ export const submissions = [
         "teamMembers": [
             "akaNazrul"
         ],
+        "gitUrl": "https://github.com/akaNazrul/RC26-JomSolat",
+        "siteUrl": "https://rc26-jomsolat.vercel.app/",
         "createdAt": new Date("2026-03-10T03:42:26.895Z")
     },
     {
         "appName": "TerawihTribe",
         "teamName": "arysya",
         "description": "Your mosque community, gamified",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132898/ramadhan_challenge_seed/vnmz3gi2ct5fopjlelli.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133320/ramadhan_challenge_seed/wsn1moux2myesgsxv7cu.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -127,13 +139,15 @@ export const submissions = [
         "teamMembers": [
             "arysya"
         ],
+        "gitUrl": "https://github.com/arisyasyahirah/TarawihTribe.git",
+        "siteUrl": "https://tarawihtribe.vercel.app/",
         "createdAt": new Date("2026-03-10T03:40:59.580Z")
     },
     {
         "appName": "suraunurhidayahkmf.com",
         "teamName": "Ijam",
         "description": "A smarter surau experience — live prayer times, infaq, Quran & Hadith, and livestreamed classes.",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132899/ramadhan_challenge_seed/trenpiqw6owmanioq9ek.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133321/ramadhan_challenge_seed/fjdnexyo0tpb3tafvclk.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -145,13 +159,15 @@ export const submissions = [
         "teamMembers": [
             "Ijam"
         ],
+        "gitUrl": "https://github.com/Ijam18/SNHY.git",
+        "siteUrl": "https://snhy.vercel.app/",
         "createdAt": new Date("2026-03-10T03:16:38.156Z")
     },
     {
         "appName": "Landing Website for Surau Nur Asy-Syura",
         "teamName": "nhily",
         "description": "A welcoming space for worship, knowledge, and community for Surau Nur Asy-Syura.",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132900/ramadhan_challenge_seed/rdzcwh5gupdyyds0ylvr.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133322/ramadhan_challenge_seed/cudfupidmfimoosu9vyf.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -163,13 +179,15 @@ export const submissions = [
         "teamMembers": [
             "nhily"
         ],
+        "gitUrl": "https://github.com/nhilya/ramadan-challenge-react-typescript",
+        "siteUrl": "https://suraunurasysyura.com/",
         "createdAt": new Date("2026-03-09T23:46:24.930Z")
     },
     {
         "appName": "Masjid Ubudiah Kuala Kangsar",
         "teamName": "AbahKau",
         "description": "moh ke mesjid",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132901/ramadhan_challenge_seed/vxxdors9hblxhyjclfwm.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133323/ramadhan_challenge_seed/fterjbv8dzhbwbpcrwrl.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -181,13 +199,15 @@ export const submissions = [
         "teamMembers": [
             "AbahKau"
         ],
+        "gitUrl": "https://github.com/ashrafhamil/masjid-ubudiah",
+        "siteUrl": "https://masjid-ubudiah.lovable.app",
         "createdAt": new Date("2026-03-09T22:24:09.974Z")
     },
     {
         "appName": "Qiyam: Masjid Tracker",
         "teamName": "muazamcode",
         "description": "Find nearby masjids, track prayers, and grow your worship journey with Qiyam.",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132902/ramadhan_challenge_seed/fmr2hyzfaiqjzrxjhori.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133325/ramadhan_challenge_seed/fkkar6yyfs1cqozf16bq.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -199,13 +219,15 @@ export const submissions = [
         "teamMembers": [
             "muazamcode"
         ],
+        "gitUrl": null,
+        "siteUrl": "https://qiyam.catchupmobility.com/",
         "createdAt": new Date("2026-03-09T16:01:10.303Z")
     },
     {
         "appName": "Masjid Al-Ikhlas Seksyen 13",
         "teamName": "Meursault",
         "description": "A Mosque architecture and UI inspired my modern and neobrtualism",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132903/ramadhan_challenge_seed/ummidfyhkbdwpphibbjm.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133326/ramadhan_challenge_seed/mibn9ob4jhudoxkkubm5.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -217,13 +239,15 @@ export const submissions = [
         "teamMembers": [
             "Meursault"
         ],
+        "gitUrl": "https://github.com/Kelp-Team/al-ikhlas",
+        "siteUrl": "https://www.masjidalikhlas.my/",
         "createdAt": new Date("2026-03-09T14:42:08.721Z")
     },
     {
         "appName": "MSI UTHM",
         "teamName": "yunn",
         "description": "Smart mosque companion for UTHM students: prayer times, events, announcements, and community tools in one platform.",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132904/ramadhan_challenge_seed/gmynsyffo3hx5kl8gdms.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133327/ramadhan_challenge_seed/cnjk65b9debtxmyfzeic.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -235,13 +259,15 @@ export const submissions = [
         "teamMembers": [
             "yunn"
         ],
+        "gitUrl": "https://github.com/hzqfarhan/msiUTHM",
+        "siteUrl": "https://msiuthm.vercel.app/",
         "createdAt": new Date("2026-03-09T14:11:17.303Z")
     },
     {
         "appName": "Saf",
         "teamName": "irfanrff",
         "description": "A serene digital companion connecting worshippers to mosque updates, prayer times, and community life.",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132904/ramadhan_challenge_seed/brazxhzsfiph8hhh87vz.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133328/ramadhan_challenge_seed/t8aqijwglsid1d0n3sgf.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -253,13 +279,15 @@ export const submissions = [
         "teamMembers": [
             "irfanrff"
         ],
+        "gitUrl": "https://github.com/IrfanNG/Saf",
+        "siteUrl": "https://saf-puce-nine.vercel.app",
         "createdAt": new Date("2026-03-09T14:00:20.322Z")
     },
     {
         "appName": "Pemuda Surau SABAS",
         "teamName": "fizlaw96",
         "description": "Menghubungkan anak muda dengan program dan aktiviti komuniti Surau Sabas.",
-        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773132905/ramadhan_challenge_seed/udqnp8y49z2esf2k9wo3.webp",
+        "featureImage": "https://res.cloudinary.com/dl2mjlme7/image/upload/v1773133329/ramadhan_challenge_seed/nf1oliwoppyoksw0vxkj.webp",
         "techStack": [
             "Next.js",
             "React",
@@ -271,6 +299,8 @@ export const submissions = [
         "teamMembers": [
             "fizlaw96"
         ],
+        "gitUrl": "https://github.com/fizlaw96/Yuran-Mengaji",
+        "siteUrl": "https://pemudasurausabas.com/",
         "createdAt": new Date("2026-03-07T08:49:06.681Z")
     }
 ];

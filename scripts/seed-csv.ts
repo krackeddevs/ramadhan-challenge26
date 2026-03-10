@@ -63,7 +63,7 @@ async function seed() {
 
     const dbData = [];
 
-    for (const row of records) {
+    for (const row of records as any[]) {
         let featureImage = "";
 
         // Find best image match
@@ -106,6 +106,8 @@ async function seed() {
             latitude: lat,
             longitude: lng,
             teamMembers: [row.Username],
+            gitUrl: row.git_url || null,
+            siteUrl: row.site_url || null,
             createdAt: new Date(row.submitted_at || Date.now())
         };
 

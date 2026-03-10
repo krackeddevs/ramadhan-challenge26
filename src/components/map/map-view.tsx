@@ -5,7 +5,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { MapPin, Users, ChevronLeft, ChevronRight, X, Loader2 } from "lucide-react";
+import { MapPin, Users, ChevronLeft, ChevronRight, X, Loader2, Github, Globe } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { SubmissionDetail } from "@/components/submissions/submission-detail";
@@ -20,6 +20,8 @@ type MapSubmission = {
     featureImage: string;
     latitude: number;
     longitude: number;
+    gitUrl: string | null;
+    siteUrl: string | null;
 };
 
 interface AppSubmission {
@@ -33,6 +35,8 @@ interface AppSubmission {
     longitude: number;
     techStack: string[];
     featureImage: string;
+    gitUrl: string | null;
+    siteUrl: string | null;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -449,6 +453,34 @@ export default function MapView() {
                                                     <span className="text-[10px] text-[#555] self-center font-bold">+{sub.techStack.length - 2}</span>
                                                 )}
                                             </div>
+                                            {(sub.gitUrl || sub.siteUrl) && (
+                                                <div className="flex gap-2 mt-1">
+                                                    {sub.gitUrl && (
+                                                        <a
+                                                            href={sub.gitUrl}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            onClick={e => e.stopPropagation()}
+                                                            className="flex items-center gap-1 text-[10px] font-bold text-[#888] hover:text-white transition-colors bg-[#1a1a1a] hover:bg-[#252525] px-2 py-1 rounded-sm border border-[#222]"
+                                                        >
+                                                            <Github className="w-3 h-3" />
+                                                            Git
+                                                        </a>
+                                                    )}
+                                                    {sub.siteUrl && (
+                                                        <a
+                                                            href={sub.siteUrl}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            onClick={e => e.stopPropagation()}
+                                                            className="flex items-center gap-1 text-[10px] font-bold text-primary/80 hover:text-primary transition-colors bg-primary/5 hover:bg-primary/10 px-2 py-1 rounded-sm border border-primary/20"
+                                                        >
+                                                            <Globe className="w-3 h-3" />
+                                                            View
+                                                        </a>
+                                                    )}
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
                                 ))}

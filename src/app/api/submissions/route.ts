@@ -13,6 +13,8 @@ export async function GET() {
                 featureImage: true,
                 latitude: true,
                 longitude: true,
+                gitUrl: true,
+                siteUrl: true,
             },
             orderBy: { createdAt: "desc" },
         });

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Users, Info } from "lucide-react";
+import { MapPin, Users, Info, Github, Globe } from "lucide-react";
 import type { Submission } from "@prisma/client";
 
 interface SubmissionDetailProps {
@@ -41,9 +41,37 @@ export function SubmissionDetail({ submission }: SubmissionDetailProps) {
             <div className="flex flex-col gap-6 p-6">
                 {/* Description */}
                 <div className="flex flex-col gap-2">
-                    <h3 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-muted-foreground">
-                        <Info className="w-4 h-4" /> About the App
-                    </h3>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <h3 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-muted-foreground">
+                            <Info className="w-4 h-4" /> About the App
+                        </h3>
+
+                        {/* External Links */}
+                        {(submission.gitUrl || submission.siteUrl) && (
+                            <div className="flex flex-wrap gap-2">
+                                {submission.gitUrl && (
+                                    <a
+                                        href={submission.gitUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-md bg-[#1a1a1a] hover:bg-[#252525] border border-[#333] text-gray-300 hover:text-white transition-colors"
+                                    >
+                                        <Github className="w-4 h-4" /> Git Repository
+                                    </a>
+                                )}
+                                {submission.siteUrl && (
+                                    <a
+                                        href={submission.siteUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-md bg-primary/10 hover:bg-primary/20 border border-primary/30 text-primary hover:text-primary transition-colors"
+                                    >
+                                        <Globe className="w-4 h-4" /> Live Demo
+                                    </a>
+                                )}
+                            </div>
+                        )}
+                    </div>
                     <p className="text-[#C0C0C0] leading-relaxed whitespace-pre-wrap">
                         {submission.description}
                     </p>
@@ -56,7 +84,7 @@ export function SubmissionDetail({ submission }: SubmissionDetailProps) {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {submission.techStack.length > 0 ? (
-                            submission.techStack.map((tech) => (
+                            submission.techStack.map((tech: string) => (
                                 <Badge
                                     key={tech}
                                     variant="outline"
@@ -78,7 +106,7 @@ export function SubmissionDetail({ submission }: SubmissionDetailProps) {
                     </h2>
                     {submission.teamMembers && submission.teamMembers.length > 0 ? (
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            {submission.teamMembers.map((member) => (
+                            {submission.teamMembers.map((member: string) => (
                                 <li key={member} className="text-sm text-foreground flex items-center gap-2 before:content-[''] before:w-1 before:h-1 before:bg-primary before:block before:rounded-full">
                                     {member}
                                 </li>

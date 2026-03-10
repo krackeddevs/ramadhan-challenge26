@@ -492,7 +492,7 @@ export default function MapView() {
 
             {/* Detail Dialog */}
             <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-                <DialogContent className="p-0 border-[#222222] bg-[#111111] max-w-[680px] overflow-hidden gap-0">
+                <DialogContent className="p-0 border-[#222222] bg-[#111111] max-w-[800px] w-full overflow-hidden gap-0">
                     <DialogTitle className="sr-only">Submission Details</DialogTitle>
                     <DialogDescription className="sr-only">Detailed view of the selected application submission</DialogDescription>
                     {loadingDetail ? (

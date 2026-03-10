@@ -346,14 +346,14 @@ export default function MapView() {
             )}>
                 <div className="flex items-center gap-2 bg-[#050505]/95 backdrop-blur-md px-5 h-12 rounded-full border border-[#222] shadow-[0_0_15px_rgba(57,255,20,0.1)] hover:border-primary/50 transition-colors shrink-0">
                     <span>KD Project</span>
-                    <Image src="/logos/kdlogo.png" alt="KD Logo" width={24} height={24} className="object-contain" />
+                    <Image src="/logos/kdlogo.png" alt="KD Logo" width={24} height={24} className="h-6 w-auto object-contain" />
                 </div>
                 <div className="flex items-center gap-3 bg-[#050505]/95 backdrop-blur-md px-6 h-12 rounded-full border border-[#222] shadow-[0_0_15px_rgba(57,255,20,0.1)] hover:border-primary/50 transition-colors shrink-0">
                     <span>Supported By</span>
                     <div className="flex items-center gap-3">
-                        <Image src="/logos/lovable.png" alt="Lovable Logo" width={64} height={20} className="object-contain" />
+                        <Image src="/logos/lovable.png" alt="Lovable Logo" width={64} height={20} className="h-5 w-auto object-contain" />
                         <span className="w-px h-3 bg-[#444]" />
-                        <Image src="/logos/google.png" alt="Google Logo" width={56} height={20} className="object-contain" />
+                        <Image src="/logos/google.png" alt="Google Logo" width={56} height={20} className="h-5 w-auto object-contain" />
                     </div>
                 </div>
             </div>

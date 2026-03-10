@@ -344,15 +344,17 @@ export default function MapView() {
                 "absolute bottom-6 left-1/2 -translate-x-1/2 z-[400] flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6 text-[10px] sm:text-xs text-[#888] font-bold tracking-wider uppercase transition-all duration-1000",
                 introPhase === "done" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
             )}>
-                <div className="flex items-center gap-2 bg-[#050505]/95 backdrop-blur-md px-4 py-3 rounded-full border border-[#222] shadow-[0_0_15px_rgba(57,255,20,0.1)] hover:border-primary/50 transition-colors">
+                <div className="flex items-center gap-2 bg-[#050505]/95 backdrop-blur-md px-5 h-12 rounded-full border border-[#222] shadow-[0_0_15px_rgba(57,255,20,0.1)] hover:border-primary/50 transition-colors shrink-0">
                     <span>KD Project</span>
-                    <Image src="/logos/kdlogo.png" alt="KD Logo" width={20} height={20} className="object-contain" />
+                    <Image src="/logos/kdlogo.png" alt="KD Logo" width={24} height={24} className="object-contain" />
                 </div>
-                <div className="flex items-center gap-3 bg-[#050505]/95 backdrop-blur-md px-4 py-3 rounded-full border border-[#222] shadow-[0_0_15px_rgba(57,255,20,0.1)] hover:border-primary/50 transition-colors">
+                <div className="flex items-center gap-3 bg-[#050505]/95 backdrop-blur-md px-6 h-12 rounded-full border border-[#222] shadow-[0_0_15px_rgba(57,255,20,0.1)] hover:border-primary/50 transition-colors shrink-0">
                     <span>Supported By</span>
-                    <Image src="/logos/lovable.png" alt="Lovable Logo" width={70} height={20} className="object-contain" />
-                    <span className="w-px h-3 bg-[#444]" />
-                    <Image src="/logos/google.png" alt="Google Logo" width={60} height={18} className="object-contain" />
+                    <div className="flex items-center gap-3 h-full py-2">
+                        <Image src="/logos/lovable.png" alt="Lovable Logo" width={60} height={22} className="object-contain" />
+                        <span className="w-px h-3 bg-[#444]" />
+                        <Image src="/logos/google.png" alt="Google Logo" width={56} height={20} className="object-contain" />
+                    </div>
                 </div>
             </div>
 

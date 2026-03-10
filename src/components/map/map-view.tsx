@@ -348,8 +348,8 @@ export default function MapView() {
             {/* Floating Submissions Panel */}
             <div
                 className={cn(
-                    "absolute top-0 right-0 h-full z-[500] transition-transform duration-300 ease-in-out",
-                    panelOpen ? "translate-x-0" : "translate-x-full"
+                    "absolute top-4 bottom-4 right-4 z-[500] transition-transform duration-300 ease-in-out rounded-xl shadow-2xl flex flex-col",
+                    panelOpen ? "translate-x-0" : "translate-x-[calc(100%+24px)]"
                 )}
                 style={{ width: "25vw", minWidth: "320px", maxWidth: "450px" }}
             >
@@ -363,7 +363,7 @@ export default function MapView() {
                 </button>
 
                 {/* Panel */}
-                <div className="w-full h-full bg-[#080808]/95 backdrop-blur-xl border-l border-[#1a1a1a] flex flex-col">
+                <div className="w-full h-full bg-[#080808]/95 backdrop-blur-xl border border-[#1a1a1a] rounded-xl flex flex-col overflow-hidden">
                     {/* Header */}
                     <div className="flex items-center justify-between px-6 py-5 border-b border-[#151515] shrink-0">
                         <div>
@@ -376,7 +376,7 @@ export default function MapView() {
                     </div>
 
                     {/* List */}
-                    <div className="flex-1 overflow-y-auto">
+                    <div className="flex-1 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                         {loading ? (
                             <div className="flex items-center justify-center h-full">
                                 <Loader2 className="h-6 w-6 text-primary animate-spin" />
@@ -387,17 +387,17 @@ export default function MapView() {
                                 <p className="text-base text-[#555555]">No submissions yet.</p>
                             </div>
                         ) : (
-                            <div className="divide-y divide-[#0f0f0f]">
+                            <div className="flex flex-col gap-2 p-3">
                                 {submissions.map((sub) => (
                                     <div
                                         key={sub.id}
                                         ref={el => { cardRefs.current[sub.id] = el; }}
                                         onClick={() => handleCardClick(sub.id)}
                                         className={cn(
-                                            "group flex gap-4 p-4 lg:p-5 cursor-pointer transition-all duration-150",
+                                            "group flex gap-4 p-4 lg:p-5 cursor-pointer transition-all duration-150 rounded-2xl overflow-hidden",
                                             activeId === sub.id
-                                                ? "bg-primary/10 border-l-4 border-primary"
-                                                : "hover:bg-[#111111] border-l-4 border-transparent"
+                                                ? "bg-primary/10 border-l-4 border-l-primary"
+                                                : "hover:bg-[#111111] border-l-4 border-l-transparent"
                                         )}
                                     >
                                         {/* Thumbnail */}

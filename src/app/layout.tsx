@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} ${openSansHeading.variable} antialiased`}
+        className={`${openSans.variable} ${openSansHeading.variable} font-sans antialiased`}
       >
         <TooltipProvider>
           {children}
